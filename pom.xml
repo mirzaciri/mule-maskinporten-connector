@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>{ORGANIZATION_ID}</groupId>
+	<groupId>37c5b454-1998-4efa-a633-cd45c824f500</groupId>
 	<artifactId>maskinporten-connector</artifactId>
 	<version>1.1.19</version>
 	<packaging>mule-extension</packaging>
@@ -11,7 +11,7 @@
 	<repository>
 		<id>MuleRepository</id>
 		<name>MuleRepository</name>
-		<url>https://maven.eu1.anypoint.mulesoft.com/api/v3/organizations/{ORGANIZATION_ID}/maven</url>
+		<url>https://maven.eu1.anypoint.mulesoft.com/api/v3/organizations/37c5b454-1998-4efa-a633-cd45c824f500/maven</url>
 		<layout>default</layout>
 	</repository>
 	</distributionManagement>
