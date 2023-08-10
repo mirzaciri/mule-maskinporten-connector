@@ -2,12 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.maskinporten.connector</groupId>
+	<groupId>{ORGANIZATION_ID}</groupId>
 	<artifactId>maskinporten-connector</artifactId>
 	<version>1.1.19</version>
 	<packaging>mule-extension</packaging>
 	<name>Maskinporten Extension</name>
-
+	<distributionManagement>
+	<repository>
+		<id>MuleRepository</id>
+		<name>MuleRepository</name>
+		<url>https://maven.eu1.anypoint.mulesoft.com/api/v3/organizations/{ORGANIZATION_ID}/maven</url>
+		<layout>default</layout>
+	</repository>
+	</distributionManagement>
 	<parent>
 		<groupId>org.mule.extensions</groupId>
 		<artifactId>mule-modules-parent</artifactId>
