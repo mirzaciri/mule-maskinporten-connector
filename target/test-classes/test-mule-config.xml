@@ -1,0 +1,19 @@
+<mule xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+      xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:maskinporten="http://www.mulesoft.org/schema/mule/maskinporten" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+          http://www.mulesoft.org/schema/mule/maskinporten http://www.mulesoft.org/schema/mule/maskinporten/current/mule-maskinporten.xsd">
+
+    <maskinporten:config name="config" configId="configId">
+        <maskinporten:connection requiredParameter="aValue" />
+    </maskinporten:config>
+
+    <flow name="sayHiFlow">
+        <maskinporten:say-hi person="Mariano Gonzalez"/>
+    </flow>
+
+    <flow name="retrieveInfoFlow">
+        <maskinporten:retrieve-info config-ref="config"/>
+    </flow>
+
+</mule>
