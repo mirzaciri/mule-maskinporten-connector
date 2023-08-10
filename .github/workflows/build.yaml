@@ -1,7 +1,8 @@
-name: Reusable Mule Pipeline
+name: Build and Publish
 
 on:
-  workflow_call:
+  release:
+    types: [created]
 
 jobs:
   build:
@@ -30,4 +31,4 @@ jobs:
         nexus_username: ${{ secrets.nexus_username }}
         nexus_password: ${{ secrets.nexus_password }}
         ORGANIZATION_ID: "37c5b454-1998-4efa-a633-cd45c824f500"
-      run: mvn -B package --file pom.xml --settings .maven/settings.xml -DskipMunitTests
+      run: mvn deploy --file pom.xml --settings .maven/settings.xml -DskipMunitTests
